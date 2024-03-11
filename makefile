@@ -177,7 +177,7 @@ $(OBJ_DIR)/DSVTest.o: $(TEST_SRC_DIR)/DSVTest.cpp $(INC_DIR)/DSVReader.h $(INC_D
 
 
 
-$(BIN_DIR)/
+# $(BIN_DIR)/
 
 clean:
 	rm -rf $(OBJ_DIR)
