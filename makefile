@@ -188,4 +188,4 @@ clean:
 directories:
 	mkdir -p $(OBJ_DIR)
 	mkdir -p $(BIN_DIR)
-	MKDIR -P $(TEST_TMP_DIR)
+	# MKDIR -P $(TEST_TMP_DIR)
