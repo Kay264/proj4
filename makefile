@@ -35,8 +35,6 @@ run_testfiledatass: $(BIN_DIR)/testfiledatass
 	$(BIN_DIR)/testfiledatass --gtest_output=xml:$(TEST_TMP_DIR)/run_testfiledatass
 	mv $(TEST_TMP_DIR)/run_testfiledatass run_testfiledatass
 
-
-
  # STRINGUTILS
 
 $(BIN_DIR)/teststrutils: $(OBJ_DIR)/StringUtils.o $(OBJ_DIR)/StringUtilsTest.o
