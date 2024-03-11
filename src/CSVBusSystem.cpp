@@ -105,7 +105,7 @@ struct CCSVBusSystem::SImplementation{
             //row is considered invalid if name and stop _id assignment fails
             try {
                 name = Row[0];
-                stop_id std::stoull(Row[1]);  
+                stop_id = std::stoull(Row[1]);  
             }catch(...){Row = {}; continue; }
 
             //checks if route already exists

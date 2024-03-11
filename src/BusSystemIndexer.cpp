@@ -1,7 +1,4 @@
-//includes
-
-
-
+#include "BusSystemIndexer.h"
 
 
 /*
@@ -35,7 +32,7 @@ CBusSystemIndexer(std::shared_ptr<CBusSystem> bussystem);
 
 
 
-//returns the number of stops in the CBujsSystem being indexed
+//returns the number of stops in the CBusSystem being indexed
 std::size_t StopCount() const noexcept;
 
 
