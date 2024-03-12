@@ -277,4 +277,4 @@ clean:
 directories:
 	mkdir -p $(OBJ_DIR)
 	mkdir -p $(BIN_DIR)
-	mkdir -P $(TEST_TMP_DIR)
+	mkdir -p $(TEST_TMP_DIR)
