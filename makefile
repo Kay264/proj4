@@ -17,6 +17,15 @@ runtests:	run_teststrutils \
 			run_teststrdatasource \
 			run_teststrdatasink \
 			run_testfiledatass \
+			run_testxml \
+			run_testdsv \
+			run_testcsvbs \
+			run_testosm \
+			run_testkml \
+			run_testdpr \
+			run_testcsvbsi \
+			run_testtpcl \
+			run_testtp \
 
 
 run_teststrutils: $(BIN_DIR)/teststrutils
@@ -35,55 +44,41 @@ run_testfiledatass: $(BIN_DIR)/testfiledatass
 	$(BIN_DIR)/testfiledatass --gtest_output=xml:$(TEST_TMP_DIR)/run_testfiledatass
 	mv $(TEST_TMP_DIR)/run_testfiledatass run_testfiledatass
 
+run_testxml: $(BIN_DIR)/testxml
+	$(BIN_DIR)/testxml --gtest_output=xml:$(TEST_TMP_DIR)/run_testxml
+	mv $(TEST_TMP_DIR)/run_testxml run_testxml
 
+run_testdsv: $(BIN_DIR)/testdsv
+	$(BIN_DIR)/testdsv --gtest_output=xml:$(TEST_TMP_DIR)/run_testdsv
+	mv $(TEST_TMP_DIR)/run_testdsv run_testdsv
 
+run_testcsvbs: $(BIN_DIR)/testcsvbs
+	$(BIN_DIR)/testcsvbs --gtest_output=xml:$(TEST_TMP_DIR)/run_testcsvbs
+	mv $(TEST_TMP_DIR)/run_testcsvbs run_testcsvbs
 
- # XML
-run_teststrdatasource: $(BIN_DIR)/teststrdatasource
-	$(BIN_DIR)/teststrdatasource --gtest_output=xml:$(TEST_TMP_DIR)/run_teststrdatasource
-	mv $(TEST_TMP_DIR)/run_teststrdatasource run_teststrdatasource
+run_testosm: $(BIN_DIR)/testosm
+	$(BIN_DIR)/testosm --gtest_output=xml:$(TEST_TMP_DIR)/run_testosm
+	mv $(TEST_TMP_DIR)/run_testosm run_testosm
 
- #DSV
-run_teststrdatasource: $(BIN_DIR)/teststrdatasource
-	$(BIN_DIR)/teststrdatasource --gtest_output=xml:$(TEST_TMP_DIR)/run_teststrdatasource
-	mv $(TEST_TMP_DIR)/run_teststrdatasource run_teststrdatasource
+run_testkml: $(BIN_DIR)/testkml
+	$(BIN_DIR)/testkml --gtest_output=xml:$(TEST_TMP_DIR)/run_testkml
+	mv $(TEST_TMP_DIR)/run_testkml run_testkml
 
- #CSVBS
-run_teststrdatasource: $(BIN_DIR)/teststrdatasource
-	$(BIN_DIR)/teststrdatasource --gtest_output=xml:$(TEST_TMP_DIR)/run_teststrdatasource
-	mv $(TEST_TMP_DIR)/run_teststrdatasource run_teststrdatasource
+run_testdpr: $(BIN_DIR)/testdpr
+	$(BIN_DIR)/testdpr --gtest_output=xml:$(TEST_TMP_DIR)/run_testdpr
+	mv $(TEST_TMP_DIR)/run_testdpr run_testdpr
 
- #OMS
-run_teststrdatasource: $(BIN_DIR)/teststrdatasource
-	$(BIN_DIR)/teststrdatasource --gtest_output=xml:$(TEST_TMP_DIR)/run_teststrdatasource
-	mv $(TEST_TMP_DIR)/run_teststrdatasource run_teststrdatasource
+run_testcsvbsi: $(BIN_DIR)/testcsvbsi
+	$(BIN_DIR)/testcsvbsi --gtest_output=xml:$(TEST_TMP_DIR)/run_testcsvbsi
+	mv $(TEST_TMP_DIR)/run_testcsvbsi run_testcsvbsi
 
- #KML
-run_teststrdatasource: $(BIN_DIR)/teststrdatasource
-	$(BIN_DIR)/teststrdatasource --gtest_output=xml:$(TEST_TMP_DIR)/run_teststrdatasource
-	mv $(TEST_TMP_DIR)/run_teststrdatasource run_teststrdatasource
+run_testtpcl: $(BIN_DIR)/testtpcl
+	$(BIN_DIR)/testtpcl --gtest_output=xml:$(TEST_TMP_DIR)/run_testtpcl
+	mv $(TEST_TMP_DIR)/run_testtpcl run_testtpcl
 
- #DIJKSTRA
-run_teststrdatasource: $(BIN_DIR)/teststrdatasource
-	$(BIN_DIR)/teststrdatasource --gtest_output=xml:$(TEST_TMP_DIR)/run_teststrdatasource
-	mv $(TEST_TMP_DIR)/run_teststrdatasource run_teststrdatasource
-
- #BUS_SYSTEM_INDEXER
-run_teststrdatasource: $(BIN_DIR)/teststrdatasource
-	$(BIN_DIR)/teststrdatasource --gtest_output=xml:$(TEST_TMP_DIR)/run_teststrdatasource
-	mv $(TEST_TMP_DIR)/run_teststrdatasource run_teststrdatasource
-
- #TPCL
-run_teststrdatasource: $(BIN_DIR)/teststrdatasource
-	$(BIN_DIR)/teststrdatasource --gtest_output=xml:$(TEST_TMP_DIR)/run_teststrdatasource
-	mv $(TEST_TMP_DIR)/run_teststrdatasource run_teststrdatasource
-
-#Transportation_planner
-run_teststrdatasource: $(BIN_DIR)/teststrdatasource
-	$(BIN_DIR)/teststrdatasource --gtest_output=xml:$(TEST_TMP_DIR)/run_teststrdatasource
-	mv $(TEST_TMP_DIR)/run_teststrdatasource run_teststrdatasource
-
-
+run_testtp: $(BIN_DIR)/testtp
+	$(BIN_DIR)/testtp --gtest_output=xml:$(TEST_TMP_DIR)/run_testtp
+	mv $(TEST_TMP_DIR)/run_testtp run_testtp
 
 
 
