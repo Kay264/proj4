@@ -1,15 +1,17 @@
 # Transportation Planner Command Line Doccumentation
 
+SImplementation is a private struct that hides the implementation of the classes member functions.
 
-## Struct Implementation
+## Included
 
+- "DataFactory.h"
 
-## Constructor
+- "TransportationPlanner.h"
 
+- memory
 
+- vector
 
-## Function 1 
+## Member
 
-
-
-## Function 2 
+- ProcessCommands returns a boolean value -> processes commands related to the transportation planner
